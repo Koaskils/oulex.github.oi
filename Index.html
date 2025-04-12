@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller Mecánico OULEX</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #333;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('file:///C:/Users/D.Alejandro/Desktop/Pagina/Fondo.jpeg') no-repeat center center/cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 24px;
+      margin: 10px 0;
+      text-align: center; /* Centrado */
+    }
+
+    header img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: auto;
+    }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    #inicio {
+      background-color: #333;
+    }
+
+    #servicios {
+      background: url('file:///C:/Users/D.Alejandro/Desktop/Pagina/Fondo3.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    #contacto {
+      background-color: #333;
+    }
+
+    .servicio {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .servicio:hover {
+      transform: scale(1.05);
+    }
+
+    .servicio h3 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .servicio p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center; /* Centrado */
+      padding: 20px 0;
+    }
+
+    #Instalacines {
+      background-color: #333;
+      color: white;
+    }
+
+    #Instalacines h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #Instalacines .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    #Instalacines .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px; /* Bordes redondeados */
+      transition: transform 0.3s ease;
+    }
+
+    #Instalacines .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Justificar todos los textos */
+    p, h2, h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="inicio">
+    <h1>Taller Mecánico OULEX</h1>
+    <p>¡Tu auto en buenas manos!</p>
+    <img src="file:///C:/Users/D.Alejandro/Desktop/Pagina/logo2.png" alt="Logo OULEX">
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container" id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Somos un taller automotriz con más de 3 años de experiencia, dedicados a brindar soluciones rápidas, eficientes y de alta calidad para todo tipo de vehículos.
+      Nos especializamos en el mantenimiento preventivo y correctivo de todas las marcas y modelos, ofreciendo un servicio integral que responde a las necesidades de cada cliente con profesionalismo, honestidad y atención personalizada.</p>
+    <p>En nuestro taller, no solo nos enfocamos en el buen funcionamiento de tu automóvil, también tenemos un firme compromiso con el medio ambiente. Somos una empresa autosustentable, y eso nos llena de orgullo.</p>
+  </div>
+
+  <div class="container" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="servicio">
+      <h3>Mecánica general</h3>
+      <p>Revisión y reparación de motor, transmisión, suspensión y más.</p>
+    </div>
+
+    <div class="servicio">
+      <h3>Servicio de frenos</h3>
+      <p>Cambio de pastillas, discos, y revisión completa del sistema de frenos.</p>
+    </div>
+
+    <div class="servicio">
+      <h3>Alineación y balanceo</h3>
+      <p>Mejora la estabilidad de tu vehículo y alarga la vida útil de tus neumáticos.</p>
+    </div>
+  </div>
+
+  <div class="container" id="Instalacines">
+    <h2>Instalaciones</h2>
+    <div class="gallery">
+      <img src="file:///C:/Users/D.Alejandro/Desktop/Pagina/1.jpeg" alt="Taller 1">
+      <img src="file:///C:/Users/D.Alejandro/Desktop/Pagina/2.jpeg" alt="Taller 2">
+      <img src="file:///C:/Users/D.Alejandro/Desktop/Pagina/3.jpeg" alt="Taller 3">
+    </div>
+  </div>
+
+  <style>
+    #Instalacines {
+      background-color: #f0f0f0; /* Fondo más claro */
+      color: #333; /* Color de texto oscuro para buen contraste */
+    }
+  </style>
+  <div class="container" id="inicio">
+    <h2>Sobre nuestras instalaciones</h2>
+    
+    <h3>Compromiso con el Medio Ambiente</h3>
+    <p>En nuestra empresa, entendemos la importancia de contribuir a la protección del medio ambiente y de adoptar prácticas sostenibles que reduzcan nuestro impacto ecológico. Por ello, hemos implementado varias iniciativas en nuestras instalaciones que reflejan nuestro compromiso con la sostenibilidad.</p>
+
+    <h3>Energía Renovable a través de Paneles Solares</h3>
+    <p>Hemos instalado paneles solares en nuestras instalaciones, lo que nos permite generar nuestra propia energía a partir de una fuente renovable y limpia. Este sistema no solo reduce nuestra dependencia de la red eléctrica, sino que también disminuye nuestra huella de carbono, contribuyendo a la lucha contra el cambio climático.</p>
+
+    <h3>Captación de Agua Pluvial</h3>
+    <p>Contamos con un sistema de captación de agua pluvial que nos permite recolectar y almacenar el agua de lluvia para su posterior uso en actividades que no requieren agua potable, como el riego de jardines y el lavado de instalaciones. Este sistema no solo ayuda a reducir nuestro consumo de agua potable, sino que también contribuye a la gestión eficiente de los recursos hídricos en nuestra comunidad.</p>
+
+    <h3>Tratamiento de Agua con Grasa</h3>
+    <p>Uno de nuestros enfoques clave es el tratamiento y la gestión responsable del agua residual generada en nuestras instalaciones. Implementamos un sistema especializado para tratar el agua con grasa, asegurando que se eliminen los contaminantes antes de ser vertida en el sistema de alcantarillado. De esta manera, evitamos la contaminación de fuentes hídricas y promovemos el uso responsable del agua.</p>
+
+    <h3>Otras Iniciativas Sostenibles</h3>
+    <p>Además de estas medidas, estamos en constante búsqueda de nuevas formas de optimizar nuestros procesos y minimizar nuestra huella ecológica. Desde el uso de materiales reciclados hasta la mejora continua de la eficiencia energética en nuestras operaciones, estamos comprometidos con el futuro del planeta.</p>
+
+    <p>A través de estas iniciativas, reafirmamos nuestro compromiso de crear un entorno de trabajo responsable y consciente del impacto ambiental, trabajando hacia un futuro más sostenible para todos.</p>
+  </div>
+
+  <div class="container" id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> ---</p>
+    <p><strong>Teléfono:</strong> +56 18378438</p>
+    <p><strong>Email:</strong> perez.cristobal.da@gmail.com</p>
+    <p><strong>Horario:</strong> Lunes a Sábado, 8:00 AM - 6:00 PM</p>
+  </div>
+
+  <style>
+    #contacto {
+      background-color: #5A5A5A; /* Fondo más oscuro */
+      color: white; /* Color de texto claro para buen contraste */
+    }
+  </style>
+
+   <footer>
+    <p>&copy; 2025 Taller Mecánico OULEX. Todos los derechos reservados.</p>
+  </footer>
+
+  <style>
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center; /* Centrado del texto */
+      padding: 20px 0;
+    }
+  </style>
+
+</body>
+
+</html>
